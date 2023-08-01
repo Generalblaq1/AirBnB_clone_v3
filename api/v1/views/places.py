@@ -157,7 +157,7 @@ def places(city_id, place_id):
     elif (request.method == "POST"):
         return create_place(request, city_id), 201
     elif (request.method == "PUT"):
-return update_place(place_id, request), 200
+        return update_place(place_id, request), 200
 
 
 @app_views.route('/places_search', methods=['POST'],
@@ -167,4 +167,4 @@ def places_search():
     retrieves all Place objects depending of the JSON
     in the body of the request
     """
-return search(request)
+    return search(request)
