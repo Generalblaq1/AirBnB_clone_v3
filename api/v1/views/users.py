@@ -96,4 +96,3 @@ def users(user_id):
         return create_user(request), 201
     elif (request.method == "PUT"):
         return update_user(user_id, request), 200
-
