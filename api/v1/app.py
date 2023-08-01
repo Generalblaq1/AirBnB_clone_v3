@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """app.py"""
+
 from models import storage
 from api.v1.views import app_views
 from werkzeug.exceptions import HTTPException
